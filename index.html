@@ -364,6 +364,14 @@
       console.log(str.repeat(num));</p>
   </div>
 
+  <p>Задание 53:</p>
+  <div class="blok">
+    <p>Создайте функцию getParentNamesTotalLength() для Сэма. Она должна принимать один аргумент — имя ребенка, и возвращать количество символов в именах матери и отца суммарно.</p>
+    <p>Ответ: const getParentNamesTotalLength = (child) => {
+      const mother = getParentFor(child, 'mother');
+      const father = getParentFor(child, 'father');
+      return mother.length + father.length;</p>
+  </div>
 
 
 
