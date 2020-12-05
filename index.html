@@ -390,6 +390,14 @@
       return getParentFor(child, parent);</p>
   </div>
 
+  <p>Задание 56:</p>
+  <div class="blok">
+    <p>Реализуйте функцию, которая принимает на вход номер кредитки (состоящей из 16 цифр) и возвращает его скрытую версию, которая может использоваться на сайте для отображения.</p>
+    <p>Ответ: const getHiddenCard = (cardNumber, starsCount = 4) => {
+      const card = cardNumber.slice(12);
+      return card.padStart(starsCount + 4, '*');
+    };</p>
+  </div>
   
   
   
