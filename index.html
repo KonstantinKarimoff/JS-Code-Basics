@@ -368,9 +368,9 @@
   <div class="blok">
     <p>Создайте функцию getParentNamesTotalLength() для Сэма. Она должна принимать один аргумент — имя ребенка, и возвращать количество символов в именах матери и отца суммарно.</p>
     <p>Ответ: const getParentNamesTotalLength = (child) => {
-      const mother = getParentFor(child, 'mother');
-      const father = getParentFor(child, 'father');
-      return mother.length + father.length;</p>
+      const result = ((getParentFor(child, 'mother') + getParentFor(child, 'father')).length);
+      return result;
+    }</p>
   </div>
 
   <p>Задание 54:</p>
@@ -425,6 +425,16 @@
       return fix === 'Targaryen';</p>
   </div>
 
+  <p>Задание 61:</p>
+  <div class="blok">
+    <p>Напишите функцию isLannisterSoldier(), которая принимает на вход два аргумента:
+      Цвет доспехов (строка). Если доспехи красные, то строка red.
+      null если щита нет. Строка lion, если щит есть, и на нём изображен лев.</p>
+    <p>Ответ: const isLannisterSoldier = (color, shield) => {
+      const result = (color === 'red' && shield === null) || shield === 'lion';
+      return result;
+    };</p>
+  </div>
   
   
   
