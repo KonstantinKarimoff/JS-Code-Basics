@@ -599,6 +599,21 @@
     };</p>
   </div>
 
+  <p>Задание 75:</p>
+  <div class="blok">
+    <p>Реализуйте такую же функцию reverse(), но выполняющую обход строки не с первого элемента по последний, а наоборот, от последнего к первому.</p>
+    <p>Ответ: const reverse = (str) => {
+      let i = str.length - 1;
+      let result = '';
+      while (i >= 0) {
+        result = `${result}${str[i]}`;
+        i = i - 1;
+      }
+    
+      return result;
+    };
+    </p>
+  </div>
 
   <p>Задание :</p>
   <div class="blok">
