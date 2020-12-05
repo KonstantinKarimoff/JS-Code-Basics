@@ -497,6 +497,18 @@
     };</p>
   </div>
 
+  <p>Задание 68:</p>
+  <div class="blok">
+    <p>Реализуйте функцию convertText(), которая принимает на вход строку и, если первая буква не заглавная, возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без изменений.</p>
+    <p>Ответ: const convertText = (text) => {
+      if (text === '') {
+        return '';
+      }
+    
+      const reversable = text[0] !== text[0].toUpperCase();
+      return reversable ? reverse(text) : text;
+    };</p>
+  </div>
 
 
   <p>Задание :</p>
