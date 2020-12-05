@@ -673,20 +673,19 @@
     </p>
   </div>
 
-
-  <p>Задание :</p>
+  <p>Задание 79:</p>
   <div class="blok">
-    <p></p>
-    <p>Ответ: </p>
+    <p>Реализуйте функцию encrypt(), которая принимает на вход исходное сообщение и возвращает зашифрованное.</p>
+    <p>Ответ: const encrypt = (str) => {
+      let result = '';
+      for (let i = 0; i < str.length; i += 2) {
+        const nextSymbol = str[i + 1] || '';
+        result = `${result}${nextSymbol}${str[i]}`;
+      }
+    
+      return result;
+    };</p>
   </div>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
